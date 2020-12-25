@@ -14,8 +14,8 @@
 #define pa_ILI9341_DC_GPIO GPIOB
 #define pa_ILI9341_DC_PIN GPIO_PIN_1
 
-#define pa_ILI9341_RST_GPIO GPIOB
-#define pa_ILI9341_RST_PIN GPIO_PIN_2
+#define pa_ILI9341_RST_GPIO GPIOE
+#define pa_ILI9341_RST_PIN GPIO_PIN_7
 
 void pa_ILI9341::setCS(uint8_t state)
 {
