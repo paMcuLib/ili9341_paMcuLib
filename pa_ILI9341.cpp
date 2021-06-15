@@ -17,6 +17,14 @@ void pa_ILI9341::reset()
 void pa_ILI9341::enable()
 {
 	this->setRST(1);
+	// setCS(1);
+	// setDC(1);
+	// int i = 0;
+	// while (1)
+	// {
+	// 	i++;
+	// 	delayMs(1);
+	// }
 }
 
 void pa_ILI9341::flush(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t Colour)

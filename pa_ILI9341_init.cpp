@@ -4,7 +4,7 @@
 */
 void pa_ILI9341::init(char spiId1, Rotation Rotation)
 {
-
+    initGpio();
     spiId = spiId1;
     enable();
     reset();
