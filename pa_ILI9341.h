@@ -2,8 +2,10 @@
 
 #ifndef __ILI9341_H__
 #define __ILI9341_H__
-#include "paBase/_ForMod.h"
-#include "pa_ILI9341.drv_inline.inc.h"
+// #include "paBase/_ForMod.h"
+// #include "pa_ILI9341.drv_inline.inc.h"
+#include "paCoreInc/all"
+#include "Conf_ILI9341.h"
 
 class pa_ILI9341
 {

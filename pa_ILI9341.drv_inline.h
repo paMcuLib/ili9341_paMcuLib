@@ -1,4 +1,4 @@
-#include "pa_ILI9341.drv_inline.inc.h"
+// #include "pa_ILI9341.drv_inline.inc.h"
 
 inline void initGpio()
 {
