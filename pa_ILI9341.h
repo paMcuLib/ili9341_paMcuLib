@@ -26,7 +26,10 @@ public:
   void flush(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t Colour);
   void burst(uint16_t Colour, uint32_t Size);
   void setAddress(uint16_t X1, uint16_t Y1, uint16_t X2, uint16_t Y2);
-
+  inline void transmitBuf(unsigned char *data, unsigned int len)
+  {
+    _G_paSPI.transmit(spiId, data, len);
+  }
   unsigned char pa_ILI9341_burst_buffer[500];
 
 private:

@@ -143,4 +143,5 @@ void pa_ILI9341::init(char spiId1, Rotation Rotation)
 
     //STARTING ROTATION
     setRotation(Rotation);
+    this->flush(0, 0, 40, 40, 0x00ff);
 }
