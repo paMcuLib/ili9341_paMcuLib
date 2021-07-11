@@ -28,7 +28,10 @@ public:
   void setAddress(uint16_t X1, uint16_t Y1, uint16_t X2, uint16_t Y2);
   inline void transmitBuf(unsigned char *data, unsigned int len)
   {
+    setDC(1);
+    setCS(0);
     _G_paSPI.transmit(spiId, data, len);
+    setCS(1);
   }
   unsigned char pa_ILI9341_burst_buffer[500];
 
